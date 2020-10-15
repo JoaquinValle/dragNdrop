@@ -4,7 +4,7 @@ const Card = (props) => {
 
     const dragStart = (event) => {
         const target = event.target
-        event.dataTransfer.setData("cardId", target.id)
+        event.dataTransfer.setData("id", target.id)
 
         setTimeout(() => {
             target.style.display = "none"
