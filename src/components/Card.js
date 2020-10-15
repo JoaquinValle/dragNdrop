@@ -6,9 +6,9 @@ const Card = (props) => {
         const target = event.target
         event.dataTransfer.setData("id", target.id)
 
-        setTimeout(() => {
-            target.style.display = "none"
-        }, 0 )
+        // setTimeout(() => {
+        //     target.style.display = "none"
+        // }, 0 )
     }
 
     const dragOver = (event) => {
