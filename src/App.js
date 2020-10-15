@@ -1,10 +1,16 @@
 import React from 'react';
+import Board from "./components/Board"
+import Card from "./components/Card"
 
 function App() {
   return (
     <div className="App">
         <main className="flexbox">
-            boards will be here
+            <Board id="board-1" className="board">
+                <Card id="card-1" className="card" draggable="true">
+                    <p>Card One</p>
+                </Card>
+            </Board>
         </main>
     </div>
   );

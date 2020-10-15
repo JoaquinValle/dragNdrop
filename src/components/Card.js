@@ -11,6 +11,10 @@ const Card = (props, { id, className, draggable }) => {
         }, 0 )
     }
 
+    const dragOver = (event) => {
+        event.stopPropagation()
+    }
+
     return (
         <div 
             className={className}
