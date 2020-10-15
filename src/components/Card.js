@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Card = (props, { id, className, draggable }) => {
+const Card = (props) => {
 
     const dragStart = (event) => {
         const target = event.target
@@ -17,9 +17,9 @@ const Card = (props, { id, className, draggable }) => {
 
     return (
         <div 
-            className={className}
-            id={id} 
-            draggable={draggable}
+            className={props.className}
+            id={props.id} 
+            draggable={props.draggable}
             onDragStart={dragStart} 
             onDragOver={dragOver}
         >

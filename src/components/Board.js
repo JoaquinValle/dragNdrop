@@ -1,6 +1,6 @@
 import React from "react";
 
-const Board = (props, { id, className }) => {
+const Board = (props) => {
   const drop = event => {
     event.preventDefault();
     const cardId = event.dataTransfer.getData("id");
@@ -16,7 +16,7 @@ const Board = (props, { id, className }) => {
   };
 
   return (
-    <div id={id} onDrop={drop} onDragOver={dragOver} className={className}>
+    <div id={props.id} onDrop={drop} onDragOver={dragOver} className={props.className}>
       {props.children}
     </div>
   );
